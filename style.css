@@ -1,0 +1,201 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('images/bureau2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bandeau1{
+    /* Fixe la div en haut de l'écran pas de scroll */
+    position:fixed;
+    top:0;
+   
+    /* Centre la div */
+    display: flex;
+    justify-content: center;    
+    width: 100%; 
+    height: fit-content;     
+}
+
+.bandeau {
+    
+    color: blanchedalmond; 
+    border-radius: 30px; 
+    height: 50px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(128, 128, 128,1);
+    margin:10px;   
+}
+
+
+#centre1 {
+    height: 100%;  
+}
+   
+
+.centre {
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 100px;
+    border:solid 5px blanchedalmond;
+    width: fit-content;
+    height: fit-content;  
+    padding: 40px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.logo{
+     /* Centre la div */
+     justify-content: center;    
+     width: 100%;
+     /* Marges ext de la div   */
+     padding: 35px; 
+    
+     border-radius: 100px; 
+     width: fit-content;
+     height: fit-content;  
+
+}
+.linux{
+    padding:35px;
+}
+.pencil{
+    padding:35px;
+}
+.visual{
+    padding:35px;
+}
+.filezilla{
+    padding:35px;
+}
+
+.centrelogo{
+    margin-top:30px;
+    padding:0px;
+    display: flex;
+    justify-content: center;    
+    width: 100%; 
+    height: fit-content;
+}
+
+span{
+    text-decoration: underline;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+div h1{
+    color:blanchedalmond;
+    font-size: 80px;    
+}
+
+.centre h1 {
+    font-size: 40px;
+}
+
+.centre h2 {
+    font-size: 80px;
+}
+
+div h2 {   
+    color:blanchedalmond;   
+    font-size: 40px;
+}
+
+div h3 {   
+    color:white;
+    font-size: 30px;
+}
+
+
+
+
+#a-propos{
+    height: 100%;   
+    background-color: rgba(255, 255, 255, 0.5);
+      
+   
+}
+.image-gauche{  
+
+    width: 400px;
+    border:solid 0px;
+    margin-top: 150px;
+    margin-left: 50px;  
+    float:left; 
+    text-align: left;
+   
+}
+
+.maphoto{
+   
+    width: 365px;
+    border:solid 0px;
+    margin-top: 3em;
+    margin-left:1em;  
+    
+    
+}
+.maphoto:hover{
+    background-image: url('images/bureau2.jpg');
+    
+}
+
+.nom-prenom{
+    font-size: 20px;
+    border: solid 0px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.nom-prenom p {
+    margin: 0px;
+}
+
+.text-a-propos{ 
+    border:solid 0px;   
+    margin-left: 400px;
+    padding: 150px;
+    font-size: 30px;   
+}
+
+.text-a-propos h1, .text-a-propos h2 { 
+    color: black;   
+}
+
+#competences{
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#parcours{
+    height: 100%;  
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#realisations{
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#contact{
+    height: 100%;  
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    padding-left: 40px;
+    padding-right: 40px;
+}
