@@ -1,13 +1,27 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url('images/bureau2.jpg');
+    background-image: url('images/bureau.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+    color: rgb(0, 0, 0); }
 
-#bandeau1{
+
+   #home{
+    border:solid 1px grey;
+    /* Hauteur de la div 100% */
+    height: 100vh;}
+
+   .titre{
+    /* Centre le text */
+    text-align: center;
+    /* Décale les titres de 100px */
+    margin-top: 100px;
+    font-size: 40px;}
+ 
+
+.bandeau1{
     /* Fixe la div en haut de l'écran pas de scroll */
     position:fixed;
     top:0;
@@ -16,8 +30,7 @@ body {
     display: flex;
     justify-content: center;    
     width: 100%; 
-    height: fit-content;     
-}
+    height: fit-content;}
 
 .bandeau {
     
@@ -26,176 +39,759 @@ body {
     height: 50px;
     width: fit-content;
     height: fit-content;
-    background-color: rgba(128, 128, 128,1);
-    margin:10px;   
+    background-color: rgb(77, 77, 77);
+    margin:10px;}
+
+ul {
+    padding-left: 40px;
+    padding-right: 40px;}
+
+/* Met en ligne la liste */
+li {
+    display: inline;
+    padding: 20px;}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;}
+
+#centre1{
+    /* border:solid 0px grey; */
 }
 
-
-#centre1 {
-    height: 100%;  
-}
-   
-
-.centre {
+.centre {  
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 0 auto;
     text-align: left;
-    margin-top: 100px;
-    border:solid 5px blanchedalmond;
+    margin-top: 50px;
+    border:solid 4px black;
     width: fit-content;
     height: fit-content;  
-    padding: 40px;
-    border-radius: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
+    padding: 35px;
+    border-radius: 100px;}
 
 
 .logo{
      /* Centre la div */
      justify-content: center;    
-     width: 100%;
-     /* Marges ext de la div   */
-     padding: 35px; 
-    
-     border-radius: 100px; 
      width: fit-content;
-     height: fit-content;  
+     height: fit-content; 
+     /* Marges ext de la div   */
+     padding: 35px;     
+     border-radius: 100px;}
 
-}
+/* Décale les div */
 .linux{
-    padding:35px;
-}
+    padding:35px;}
 .pencil{
-    padding:35px;
-}
+    padding:35px;}
 .visual{
-    padding:35px;
-}
+    padding:35px;}
 .filezilla{
-    padding:35px;
-}
+    padding:35px;}
 
 .centrelogo{
-    margin-top:30px;
-    padding:0px;
-    display: flex;
-    justify-content: center;    
-    width: 100%; 
+    margin-top:1px;   
+    display: flex;     
+    width: fit-content; 
     height: fit-content;
-}
+    /* justify-content: center;    */
+    margin: 0 auto;}
 
+/* Souligne le text */
 span{
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
-li {
-    display: inline;
-    padding: 20px;
-}
 
-a {
-    color: blanchedalmond;
-    text-decoration: none;
-}
+/* ------ Zone a-propos ------- */
 
-div h1{
-    color:blanchedalmond;
-    font-size: 80px;    
+#a-propos{  
+   
+    height: 100vh;
+    border: solid 1px gray;
+    padding-right: 30px;
+    text-align: justify;
 }
 
 .centre h1 {
-    font-size: 40px;
-}
+    font-size: 40px;}
 
 .centre h2 {
-    font-size: 80px;
-}
-
-div h2 {   
-    color:blanchedalmond;   
-    font-size: 40px;
-}
-
-div h3 {   
-    color:white;
     font-size: 30px;
 }
 
+div h2 {      
+    font-size: 20px;}
+
+div h3 {      
+    font-size: 20px;}
 
 
-
-#a-propos{
-    height: 100%;   
-    background-color: rgba(255, 255, 255, 0.5);
-      
-   
-}
-.image-gauche{  
-
+.image-gauche{    
     width: 400px;
-    border:solid 0px;
-    margin-top: 150px;
-    margin-left: 50px;  
-    float:left; 
-    text-align: left;
-   
-}
+    margin-top: 30px;
+    /* margin-left: 25px;   */
+    float:left;}
 
 .maphoto{
-   
-    width: 365px;
-    border:solid 0px;
-    margin-top: 3em;
-    margin-left:1em;  
-    
-    
-}
-.maphoto:hover{
-    background-image: url('images/bureau2.jpg');
-    
-}
+    /* border:solid 1px; */   
+    width: 200px;
+
+    /* border:solid 0px; */
+    margin-top: 5%;
+    margin-left: 100px;}
 
 .nom-prenom{
+    text-align: center;
     font-size: 20px;
-    border: solid 0px;
+    /* border: solid 1px; */
     margin-top: 50px;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 .nom-prenom p {
-    margin: 0px;
-}
+     /* Enlève les marges entre les lignes */
+     margin: 0px;}
 
 .text-a-propos{ 
-    border:solid 0px;   
+    /* border:solid 1px;    */
     margin-left: 400px;
-    padding: 150px;
-    font-size: 30px;   
+    padding: 20px;
+    font-size: 25px;}
+
+
+/* --------- Zone competances --------- */
+
+#competences{  
+    
+    border: solid grey;
+   height: 100vh;}
+
+/* niveau global */
+.niveau{
+    display: flex;    
+    /* border:solid 1px grey; */
+    width: fit-content;
+    margin: 0 auto;}
+
+.comp-logo{
+    /* border:solid 1px grey; */
+    width: fit-content;
+    margin: 0 auto;}
+
+/* espace entre les logos */
+.html{    
+    padding-right: 1px;}
+.css{
+    padding-right: 1px;}
+.js{
+    padding-right: 1px;}
+.jquery{
+    /* Séparation plus grande entre Front et Back */
+    padding-right: 40px;}
+.php{
+    padding-right: 1px;}
+.mysql{
+    padding-right: 1px;}
+
+
+
+/* Niveau en html */
+.nhtml{ 
+        width: 100px;
+        height: 300px;
+        display:block;
+        position: relative;
+        margin-right: 5px;  
+}
+.rhtml{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px; 
+    height:80%;   
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+    ;
+
+  
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation-name: nhtml;
+    animation-duration: 3s;
+      
+    animation-iteration-count: infinite;
+    }
+
+
+@keyframes nhtml {
+    from {height:0%;}
+    to {height:80%;}
+    to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+        ;}
+    
+   
 }
 
-.text-a-propos h1, .text-a-propos h2 { 
-    color: black;   
+
+
+
+/* Niveau en css */
+.ncss{
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    margin-right: 5px;
 }
 
-#competences{
-    height: 100%;  
-    background-color: rgba(0, 0, 0, 0.1);
+.rcss{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px; 
+    height:60%;   
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+    ;
+
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation-name: ncss;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+
+
+@keyframes ncss {
+    from {height:0%;}
+    to {height:60%;}
+    to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);}
 }
+
+
+
+
+/* Niveau en js */
+.njs{    
+        width: 100px;
+        height: 300px;
+        display:block;
+        position: relative;
+        margin-right: 5px;
+    }
+
+.rjs{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px; 
+    height:25%;   
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation-name: njs;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+
+
+@keyframes njs {
+    from {height:0%;}
+    to {height:25%;}
+    to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);}
+}
+
+
+/* Niveau en jquery */
+.njquery{    
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    /* Séparation plus grande entre Front et Back */
+    margin-right: 44px;
+}
+
+.rjquery{
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+width: 100px; 
+height:25%;   
+background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+
+position: absolute;
+left:0;
+bottom:0;
+animation-name: njquery;
+animation-duration: 3s;
+animation-iteration-count: infinite;}
+
+
+@keyframes njquery {
+from {height:0%;}
+to {height:25%;}
+to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);}
+}
+
+
+
+/* Niveau en php */
+
+.nphp{
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    margin-right: 5px;
+}
+
+.rphp{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px; 
+    height:10%;   
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation-name: nphp;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+
+@keyframes nphp {
+    from {height:0%;}
+    to {height:10%;}
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+    
+}
+
+
+/* Niveau en mysql */
+
+.nmysql{
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    margin-right: 5px;
+}
+    .rmysql{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100px; 
+        height:5%;   
+        background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+       
+    
+        position: absolute;
+        left:0;
+        bottom:0;
+        animation-name: nmysql;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;}    
+    
+    @keyframes nmysql {
+        from {height:0%;}
+        to {height:5%;}
+        to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);}
+    }
+        
+
+
+/* Niveau en sqllight */
+
+
+.nsqllight{
+    width: 100px;
+    height: 300px;
+    display:block;
+    position: relative;
+    /* margin-right: 5px; */
+}
+
+.rsqllight{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px; 
+    height:15%;   
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);
+
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation-name: nsqllight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;}
+    
+
+
+
+@keyframes nsqllight {
+    from {height:0%;}
+    to {height:15%;}
+    to{background: linear-gradient(0deg, rgba(255, 0, 0, 0.3) 15px, rgba(0, 156, 26, 0.3) 50px, rgba(0, 255, 0, 0.8) 200px);}
+}
+
+
+/* Mon parcours */
 
 #parcours{
-    height: 100%;  
-    background-color: rgba(255, 255, 255, 0.5);
+    
+   border:solid 1px grey;
+   /* height:fit-content; pour la hauteur quand l'élément est plus grand que l'affichage sinon utiliser height:100vh; */
+   height: fit-content;
+   overflow-y: auto;
+  
+ 
+   
 }
 
-#realisations{
-    height: 100%;  
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#contact{
-    height: 100%;  
-    background-color: rgba(255, 255, 255, 0.5);
+.annees{
+    /* border: solid 1px; */
+    float: left;  
+    margin-top: 44px;   
+    font-size: 25px;
+    
 }
 
-ul {
-    padding-left: 40px;
-    padding-right: 40px;
+.detail{
+    /* border: solid 1px; */
+    margin-top: 95px;
+    margin-left: 50%;
+    font-size: 20px;
+       
 }
+
+
+.a2324{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    border-radius: 40px;
+    height:40px;
+    width: 350px; 
+    margin-top:80px;
+    margin-left: 550px;
+    
+     
+
+}
+
+.a1723{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+
+}
+
+.a2014{
+    text-align: center;
+    line-height : 40px;
+
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;   
+    margin-top:132px;
+    margin-left: 550px;
+}
+
+.a0717{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+}
+
+.a0407{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;  
+
+}
+
+.a0104{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+   
+
+}
+
+.a9601{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+    
+
+}
+
+.a9096{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;   
+
+}
+
+.a8990{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+   
+}
+
+.a8789{
+    text-align: center;
+    line-height : 40px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: solid 1px; */
+    border-radius: 40px;
+    height:40px;
+    width: 350px;
+    margin-top:132px;
+    margin-left: 550px;
+   
+
+}
+
+
+.d2324{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    
+    
+    
+
+}
+.d1723{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d2014{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d0717{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d0407{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d0104{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d9601{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d9096{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d8990{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+.d8789{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px;
+    border-radius: 40px;
+    height:150px;
+    width: 400px;
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+/* Réalisations */
+
+#realisations{   
+   border:solid 1px grey;
+   height: 100vh;}
+
+
+
+       /* CONTACT */
+#contact{   
+   border:solid 1px grey;
+      height: 100vh;
+      text-align: left;
+      font-size: 25px;
+    }
+
+.field{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);    
+}
+.legende{
+    font-size: 18px;
+}     
+
+input{
+    font-size: 18px;
+  
+
+}
+#nom input {
+    text-transform: uppercase;
+}
+#prenom input{
+    text-transform: capitalize;
+}
+
+textarea{ 
+    font-size: 18px;
+    height: 150px;
+    width: 250px;
+    /* Bloque l'agrandissement de la zone message */
+    resize: none;
+    }
+
+.email input{
+    text-transform: lowercase;
+
+}
+
+.message{
+    vertical-align:top;
+}
+
+/* Boutons Annulé et Envoyer */
+.bouton{ 
+    float: right;
+    padding-bottom: 10px;
+}
+
+
+#annuler{
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
+    font-size: large;
+}
+
+#envoyer{
+    background-color: rgba(0, 255, 13, 0.6);
+    color: white;   
+    font-size: large; 
+}
+    
